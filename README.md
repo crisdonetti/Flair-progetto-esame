@@ -1,2 +1,7 @@
 # Pagina Web brand Flair
-Progetto per Esame corso di Web Design
+Donetti Cristiano
+Matricola
+Corso di Web Design 
+Baccan Matteo
+Anno Accademico 2023/2024
+realizzazione sito brand
