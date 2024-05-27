@@ -8,18 +8,7 @@
       text-align: center;
     }
 
-    .top-band {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      box-sizing: border-box;
-      width: 100%;
-      font-size: 14px;
-    }
-
-    .flair-section {
-      margin-top: 20px;
-    }
+    
 
     h1 {
       font-size: 46px;
@@ -33,7 +22,18 @@
       margin-left: 50px;
       margin-right: 50px
     }
+    .top-band {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 14px;
+    }
 
+    .flair-section {
+      margin-top: 20px;
+    }
     .bottom-band {
       background-color: #000;
       color: #fff;
