@@ -12,7 +12,7 @@
   <div class="top-band">
     <h1>FLAIR</h1>
     <a href="#Collezioni">VAMP/VAMP</a>
-    <a href="#Collezioni2">MEMORIA FUTURI</a>
+    <a href="#MEMORIAFUTURI">MEMORIA FUTURI</a>
     <a href="#CONTATTI">Contatti</a>
      <p class="small-text">ISCRIVITI</p>
     <form action="/action.php" target=”_blank”>
@@ -36,16 +36,16 @@
 <br>
 <div class="swiper">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 4</div>
-    <div class="swiper-slide">Slide 5</div>
-    <div class="swiper-slide">Slide 6</div>
-    <div class="swiper-slide">Slide 7</div>
-    <div class="swiper-slide">Slide 8</div>
-    <div class="swiper-slide">Slide 9</div>
-    <div class="swiper-slide">Slide 10</div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
   </div>
   <!-- Add Pagination -->
   <div class="swiper-pagination"></div>
@@ -54,55 +54,197 @@
   <div class="swiper-button-next"></div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  function myPlugin({ swiper, extendParams, on }) {
+    extendParams({
+      debugger: false,
+    });
 
-<p>  
-    <img src=https://i.pinimg.com/736x/98/8d/a7/988da7b85bd827d2d7f82fccdc23bac2.jpg alt="Look1"> </p>
-    <p> 
-    <img src=https://i.pinimg.com/736x/2a/28/fe/2a28fe8ff48581030dfcb9c27a66e1c1.jpg alt="Look2">  </p>
-     <p>
-    <img src=https://i.pinimg.com/736x/b3/af/30/b3af305e884ee65945e59ad7d8184394.jpg alt="Look3">  </p>
-    <p>
-    <img src=https://i.pinimg.com/736x/47/9e/ef/479eefb72b8ba305789d761dfc6fdee7.jpg alt="Look4">  </p>
-     <p>
-    <img src=https://i.pinimg.com/736x/c4/0d/03/c40d03d06ebcf0a97dc196c80d9d9dde.jpg alt="Look5">  </p>
-     <p>
-    <img src=https://i.pinimg.com/736x/f0/d5/60/f0d5605147cfabd5bfaa2c2cf26f0e82.jpg alt="Look6">  </p>
-     <p>
-    <img src=https://i.pinimg.com/736x/a3/55/f3/a355f3b4ba01ffa63b0af3a8196c25f0.jpg alt="Look7">  </p>
-     <p>
-    <img src=https://i.pinimg.com/736x/70/06/95/700695995792687c5aeef43a54e2669f.jpg alt="Look8">  </p>
-     <p>
-    <img src=https://i.pinimg.com/736x/07/03/ab/0703ab0dc3be83c57b2dd4b51acb5cc7.jpg alt="Look9">  </p>
-    <p>
-    <img src=https://i.pinimg.com/736x/fa/ba/98/faba98cc119620d6bf3ca8113231260b.jpg alt="Look10">  </p> 
-  </div>
+    on('init', () => {
+      if (!swiper.params.debugger) return;
+      console.log('init');
+    });
+    on('click', (swiper, e) => {
+      if (!swiper.params.debugger) return;
+      console.log('click');
+    });
+    on('tap', (swiper, e) => {
+      if (!swiper.params.debugger) return;
+      console.log('tap');
+    });
+    on('doubleTap', (swiper, e) => {
+      if (!swiper.params.debugger) return;
+      console.log('doubleTap');
+    });
+    on('sliderMove', (swiper, e) => {
+      if (!swiper.params.debugger) return;
+      console.log('sliderMove');
+    });
+    on('slideChange', () => {
+      if (!swiper.params.debugger) return;
+      console.log(
+        'slideChange',
+        swiper.previousIndex,
+        '->',
+        swiper.activeIndex
+      );
+    });
+    on('slideChangeTransitionStart', () => {
+      if (!swiper.params.debugger) return;
+      console.log('slideChangeTransitionStart');
+    });
+    on('slideChangeTransitionEnd', () => {
+      if (!swiper.params.debugger) return;
+      console.log('slideChangeTransitionEnd');
+    });
+    on('transitionStart', () => {
+      if (!swiper.params.debugger) return;
+      console.log('transitionStart');
+    });
+    on('transitionEnd', () => {
+      if (!swiper.params.debugger) return;
+      console.log('transitionEnd');
+    });
+    on('fromEdge', () => {
+      if (!swiper.params.debugger) return;
+      console.log('fromEdge');
+    });
+    on('reachBeginning', () => {
+      if (!swiper.params.debugger) return;
+      console.log('reachBeginning');
+    });
+    on('reachEnd', () => {
+      if (!swiper.params.debugger) return;
+      console.log('reachEnd');
+    });
+  }
+</script>
 
-  </h2 id="Collezioni2"></h2>  
+<script>
+  var swiper = new Swiper('.swiper', {
+    // Install Plugin To Swiper
+    modules: [myPlugin],
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    debugger: true,
+  });
+</script>   
+
+
+    </h2 id="MEMORIAFUTURI"</h2>  
     <h1> MEMORIA FUTURI</h1>  
     <p>La collezione di moda “Memoria Futuri”, ispirata al movimento futurista, si basa sui principi fondamentali di questa avanguardia artistica, che vanno oltre la semplice estetica e si concentrano sulla dinamicità, sull'innovazione e sull'utilizzo di materiali moderni, seguendo la stessa ricerca verso il progresso e la tecnologia che caratterizzava gli appartenenti a questo movimento.Il nome è quindi un riferimento alla volontà della collezione di mirare verso la novità e la sperimentazione, come già fecero più di 100 anni fa i futuristi.<br />I capi della collezione sono caratterizzati da linee pulite, tagli netti, forme geometriche o curve e asimmetrie, ispirate alle creazioni degli artisti futuristi come Balla, Carrà, Severini e Boccioni. Gli abiti diventano opere d’arte in movimento, come sculture dotate della fluidità che quest’ultimo ha sempre cercato di emulare. I modelli inoltre sfileranno indossando un casco da moto, riferimento alla passione dei futuristi per la moto e la velocità.<br />Nella collezione l'attenzione è rivolta alla dinamicità e alla fluidità dei tessuti, che sono scelti per la loro resistenza e per la loro capacità di adattarsi ai movimenti del corpo. I tessuti utilizzati nella collezione sono anche sostenibili, in linea con l'impegno del movimento futurista per la modernità e l'innovazione, non si può infatti immaginare un futuro senza prima concentrarsi sul presente. 
     </p>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
       </div>
-      <!-- Add Pagination -->
+
       <div class="swiper-pagination"></div>
-      <!-- Add Navigation -->
+
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      function myPlugin({ swiper, extendParams, on }) {
+        extendParams({
+          debugger: false,
+        });
+  
+        on('init', () => {
+          if (!swiper.params.debugger) return;
+          console.log('init');
+        });
+        on('click', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('click');
+        });
+        on('tap', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('tap');
+        });
+        on('doubleTap', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('doubleTap');
+        });
+        on('sliderMove', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('sliderMove');
+        });
+        on('slideChange', () => {
+          if (!swiper.params.debugger) return;
+          console.log(
+            'slideChange',
+            swiper.previousIndex,
+            '->',
+            swiper.activeIndex
+          );
+        });
+        on('slideChangeTransitionStart', () => {
+          if (!swiper.params.debugger) return;
+          console.log('slideChangeTransitionStart');
+        });
+        on('slideChangeTransitionEnd', () => {
+          if (!swiper.params.debugger) return;
+          console.log('slideChangeTransitionEnd');
+        });
+        on('transitionStart', () => {
+          if (!swiper.params.debugger) return;
+          console.log('transitionStart');
+        });
+        on('transitionEnd', () => {
+          if (!swiper.params.debugger) return;
+          console.log('transitionEnd');
+        });
+        on('fromEdge', () => {
+          if (!swiper.params.debugger) return;
+          console.log('fromEdge');
+        });
+        on('reachBeginning', () => {
+          if (!swiper.params.debugger) return;
+          console.log('reachBeginning');
+        });
+        on('reachEnd', () => {
+          if (!swiper.params.debugger) return;
+          console.log('reachEnd');
+        });
+      }
+    </script>
+  
+    <script>
+      var swiper = new Swiper('.swiper', {
+        // Install Plugin To Swiper
+        modules: [myPlugin],
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        debugger: true,
+      });
+    </script>   
 <br> 
-  <div class="bottom-band">
+  
+<div class="bottom-band">
     <h2 id="CONTATTI"></h2>
     <p class="small-text"> CONTATTI  
       <p class="small-text"> email: cristiano.donetti.02@gmail.com     
