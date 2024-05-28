@@ -7,20 +7,16 @@
       color: #333;
       text-align: center;
     }
-
-    
-
     h1 {
       font-size: 46px;
-      margin: 20px 0;
+      margin: 20px;
     }
-
     p {
       text-align: justify;
       font-size: 18px;
-      margin: 20px 0;
+      margin: 20px;
       margin-left: 50px;
-      margin-right: 50px
+      margin-right: 50px;
     }
     .top-band {
       background-color: #000;
@@ -30,7 +26,6 @@
       width: 100%;
       font-size: 14px;
     }
-
     .flair-section {
       margin-top: 20px;
     }
@@ -41,7 +36,6 @@
       box-sizing: border-box;
       width: 100%;
     }
-
     .small-text {
       font-size: 14px;
       text-align: center;
