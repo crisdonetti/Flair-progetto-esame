@@ -1,24 +1,24 @@
 
-    body {
+body {
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
        background: linear-gradient(to bottom, #ffffff, #808080);
       color: #333;
       text-align: center;
-    }
-    h1 {
+     }
+h1 {
       font-size: 46px;
       margin: 20px;
     }
-    p {
+p {
       text-align: justify;
       font-size: 18px;
       margin: 20px;
       margin-left: 50px;
       margin-right: 50px;
     }
-    .top-band {
+.top-band {
       background-color: #000;
       color: #fff;
       padding: 20px;
@@ -26,27 +26,40 @@
       width: 100%;
       font-size: 14px;
     }
-    .flair-section {
+.flair-section {
       margin-top: 20px;
     }
-    .bottom-band {
+.bottom-band {
       background-color: #000;
       color: #fff;
       padding: 10px;
       box-sizing: border-box;
       width: 100%;
     }
-    .small-text {
+.small-text {
       font-size: 14px;
       text-align: center;
     }
-    .medium-text {
+.medium-text {
       font-size: 14px;
     }
-    img {
+img {
       width: 25%;
       margin-top: 20px;
     }
-    a {
+a {
       color: grey;
      }
+.swiper {
+      width: 80%;
+      height: 500px;
+    }
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
