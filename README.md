@@ -1,11 +1,13 @@
 # Pagina Web brand Flair
-Donetti Cristiano
-Matricola 943
-Corso di Web Design 
-Baccan Matteo
-Anno Accademico 2023/2024
-realizzazione sito brand
-https://flairbrand.netlify.app/
+
+
+- Donetti Cristiano
+- Matricola 943
+- Corso di Web Design 
+- Baccan Matteo
+- Anno Accademico 2023/2024
+- realizzazione sito brand
+- https://flairbrand.netlify.app/
 
 
 FLAIR
