@@ -51,3 +51,7 @@ img {
 a {
       color: grey;
      }
+#subscribeForm {
+      display: none; /* Nasconde il form inizialmente */
+      margin-top: 20px;
+    }
