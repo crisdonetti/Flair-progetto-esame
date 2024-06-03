@@ -12,39 +12,39 @@
 
 <body>
 
-  
-<div class="top-band">
-  <h1>FLAIR</h1>
-  <a href="#Collezioni">VAMP/VAMP</a>
-  <a href="#MEMORIAFUTURI">MEMORIA FUTURI</a>
-  <a href="#HERITAGE"> HERITAGE OF IDEAS</a>
-  <a href="#CONTATTI">Contatti</a> 
-  <p class="click-iscriviti" onclick="toggleForm()">ISCRIVITI</p>
-  
-  <form id="subscribeForm" action="/action.php" target="_blank">
-    <label for="fname">Nome:</label><br>
-    <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Cognome:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" value=""><br>
-    <label for="dob">Data di nascita:</label><br>
-    <input type="date" id="dob" name="dob"><br><br>
-    <input type="submit" value="Conferma" style="cursor: pointer;">
-  </form>
-</div>
 
-<script>
-  function toggleForm() {
-    var form = document.getElementById("subscribeForm");
-    if (form.style.display === "none" || form.style.display === "") {
-      form.style.display = "block";
-    } else {
-      form.style.display = "none";
+  <div class="top-band">
+    <h1>FLAIR</h1>
+    <a href="#Collezioni">VAMP/VAMP</a>
+    <a href="#MEMORIAFUTURI">MEMORIA FUTURI</a>
+    <a href="#HERITAGE"> HERITAGE OF IDEAS</a>
+    <a href="#CONTATTI">Contatti</a>
+    <p class="click-iscriviti" onclick="toggleForm()">ISCRIVITI</p>
+
+    <form id="subscribeForm" action="/action.php" target="_blank">
+      <label for="fname">Nome:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <label for="lname">Cognome:</label><br>
+      <input type="text" id="lname" name="lname" value=""><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" value=""><br>
+      <label for="dob">Data di nascita:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+      <input type="submit" value="Conferma" style="cursor: pointer;">
+    </form>
+  </div>
+
+  <script>
+    function toggleForm() {
+      var form = document.getElementById("subscribeForm");
+      if (form.style.display === "none" || form.style.display === "") {
+        form.style.display = "block";
+      } else {
+        form.style.display = "none";
+      }
     }
-  }
-</script>
-  
+  </script>
+
   <script>
     function toggleForm() {
       var form = document.getElementById("subscribeForm");
@@ -134,7 +134,7 @@
   <h2 id="MEMORIAFUTURI"></h2>
   <h1> MEMORIA FUTURI</h1>
   <button onclick="toggleParagraph('MemoriaFuturiParagraph')">Relazione</button>
-  <p id="MemoriaFuturiParagraph" style="display: none;"La collezione di moda “Memoria Futuri”, ispirata al movimento futurista, si basa sui principi fondamentali di
+  <p id="MemoriaFuturiParagraph" style="display: none;""> La collezione di moda “Memoria Futuri”, ispirata al movimento futurista, si basa sui principi fondamentali di
     questa avanguardia artistica, che vanno oltre la semplice estetica e si concentrano sulla dinamicità,
     sull'innovazione e sull'utilizzo di materiali moderni, seguendo la stessa ricerca verso il progresso e la tecnologia
     che caratterizzava gli appartenenti a questo movimento.Il nome è quindi un riferimento alla volontà della collezione
@@ -151,25 +151,52 @@
   <br>
   </div>
 <br />
-<h2 id="HERITAGE"></h2>
-<h1> HERITAGE OF IDEAS</h1>
-<button onclick="toggleParagraph('IdeasParagraph')">Relazione</button>
-<p id="IdeasParagraph" style="display: none;"La collezione di moda “Memoria Futuri”, ispirata al movimento futurista, si basa sui principi fondamentali di
-  questa avanguardia artistica, che vanno oltre la semplice estetica e si concentrano sulla dinamicità,
-  sull'innovazione e sull'utilizzo di materiali moderni, seguendo la stessa ricerca verso il progresso e la tecnologia
-  che caratterizzava gli appartenenti a questo movimento.Il nome è quindi un riferimento alla volontà della collezione
-  di mirare verso la novità e la sperimentazione, come già fecero più di 100 anni fa i futuristi.<br />I capi della
-  collezione sono caratterizzati da linee pulite, tagli netti, forme geometriche o curve e asimmetrie, ispirate alle
-  creazioni degli artisti futuristi come Balla, Carrà, Severini e Boccioni. Gli abiti diventano opere d’arte in
-  movimento, come sculture dotate della fluidità che quest’ultimo ha sempre cercato di emulare. I modelli inoltre
-  sfileranno indossando un casco da moto, riferimento alla passione dei futuristi per la moto e la
-  velocità.<br />Nella collezione l'attenzione è rivolta alla dinamicità e alla fluidità dei tessuti, che sono scelti
-  per la loro resistenza e per la loro capacità di adattarsi ai movimenti del corpo. I tessuti utilizzati nella
-  collezione sono anche sostenibili, in linea con l'impegno del movimento futurista per la modernità e l'innovazione,
-  non si può infatti immaginare un futuro senza prima concentrarsi sul presente.
-</p>
-<br />
-<br />
+<h2 id=" HERITAGE">
+    </h2>
+  <h1> HERITAGE OF IDEAS</h1>
+  <button onclick="toggleParagraph('IdeasParagraph')">Relazione</button>
+  <p id="IdeasParagraph" style="display: none;">La collezione di moda maschile Heritage of Ideas si ispira ai miti
+    dell'antica Grecia, un'epoca ricca di storie affascinanti che continuano a influenzare la cultura moderna. Questi
+    miti intramontabili sono una fonte inesauribile di ispirazione, e attraverso questa collezione, ho cercato di
+    trasmettere il loro fascino senza tempo e il loro significato. Ogni figurino della collezione rappresenta un mito
+    specifico, con abiti che rivisitano lo stile greco antico e che presentano panneggi leggeri e di colore chiaro,
+    tranne per qualche eccezione in cui le tonalità sono più scure ma sempre coerenti con la rappresentazione della
+    mitologia greca, e accessori che evocano l'essenza di ciascun racconto.<br />I tessuti selezionati richiamano
+    l’estetica e lo stile di quel periodo storico, sono leggeri, fluidi, e gli abiti sono caratterizzati da una grande
+    attenzione per il drappeggio e la semplicità delle linee. Per questo motivo i capi sono realizzati in lino, cotone
+    leggero, seta, plissè (per richiamare elementi architettonici quali le colonne), mussole, chiffon e in alcuni casi
+    specifici anche corda, perline e metallo. Importantissimi sono anche gli accessori come maschere e bracciali che
+    sono presenti in ogni modello.<br />La costante della collezione sono i pantaloni con vestibilità rilassata, che va
+    a formare pieghe e panneggi sul fondo gamba e va a coprire il piede scalzo.<br />Per quanto riguarda invece la parte
+    superiore si trovano sia capi attillati, come le canottiere, che capi leggermente oversize come la
+    maglieria.<br />Tra la vasta raccolta di racconti mitologici greci ho scelto i 10 che reputavo più significativi e
+    attuali. E’ presente, per esempio, il mito del Vaso di Pandora che raffigura il desiderio di conoscenza, la
+    curiosità ma anche la fragilità umana, ed è stato rappresentato ricreando attraverso la struttura degli abiti le
+    forme di un’anfora.<br /> Una maglia composta di perline con occhi di diverso colore è un richiamo al mito del
+    Mostro dai 100 Occhi che parla di vigilanza e dell'importanza di osservare attentamente il mondo che ci circonda.
+    Per il mito di Efesto, il dio greco del fuoco e della lavorazione dei metalli, l’outfit è composto da un armatura e
+    bracciali in metallo artigianali che rappresentano l'ingegnosità e la creatività umana. Ulisse e le sirene parla del
+    desiderio umano di affrontare le tentazioni e rimanere fedeli ai propri ideali. Il figurino associato a questo mito
+    è un riferimento al modo in cui l’eroe di Itaca è riuscito a resistere alle sirenidi, sono presenti infatti delle
+    cuffie che coprono le orecchie e una canottiera completamente realizzata in corda.<br />Il mito di Perseo e Medusa
+    rappresenta il coraggio di affrontare le proprie paure. L'abito ispirato a questo mito però non rappresenta l’eroe,
+    bensì uno che è stato sconfitto dalle gorgoni, infatti i capi sono realizzati con tessuti con stampa
+    pietra.<br />Prometeo, il titano che rubò il fuoco agli dei per donarlo all'umanità, è l’emblema dell'innovazione e
+    della ribellione. L'abito associato a Prometeo è caratterizzato da una struttura che ricorda una colonna, come
+    quella a cui è stato legatoe dove ogni giorno gli veniva divorato il fegato da un’aquila come punizione voluta da
+    Zeus. Il mito di Narciso parla dell'amore e della vanità. Il figurino associato a questo mito presenta un abito a
+    tuta intera con una struttura che copre quasi interamente il volto e che nella parte frontale è realizzata con un
+    materiale semitrasparente come lo chiffon che permette la visione, mente ai lati da uno specchio che permette, se
+    guardato con la coda dell’occhio, di vedersi riflesso.<br />Il mito di Aracne rappresenta la competizione e
+    l'importanza della creatività e il figurino indossa una lunga veste con ricami che richiamano le ragnatele. Il mito
+    di Orfeo parla della potenza dell'amore. L'abito associato a Orfeo è caratterizzato dal fatto che sia al contrario,
+    la parte frontale dell’abito difatti si trova sul retro, richiamando lo sforzo (rivelatosi poi vano) di non voltarsi
+    a guardare Euridice.<br />Infine il mito di Icaro è la rappresentazione dell'ambizione e delle conseguenze
+    dell'eccesso di fiducia. L'abito ispirato a Icaro è realizzato con tessuti che richiamano le ali e presenta dettagli
+    in plissé che ricordano piume.
+  </p>
+  <br />
+  <br />
   <div class="bottom-band">
     <h2 id="CONTATTI"></h2>
     <p class="small-text"> CONTATTI
