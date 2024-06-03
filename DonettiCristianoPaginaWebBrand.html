@@ -50,8 +50,6 @@
 </script>
 
 <br>
-
-
 <br>
 </body>
 </html>
@@ -63,109 +61,6 @@
     </p>
   </div>
   
-  </script> 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/53/4c/42/534c42fb4c9b6d14f55d79e03b2c40bc.jpg alt="MMLook1"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/f0/80/23/f08023c797b3ab5ab598a15077ed99d3.jpg alt="MMLook2"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/18/7a/45/187a4504c45a14b0e5164ce8b268b476.jpg alt="MMLook3"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/77/a4/49/77a449af5c56f85a91540117f3ad0bdd.jpg alt="MMLook4"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/90/19/3a/90193ab611fd3b008df637df1e1ac28d.jpg alt="MMLook5"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/d1/0e/83/d10e83d94ab0d68a22241f3dca199d6d.jpg alt="MMLook6"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/e4/99/70/e4997091509847d1f06894b94e836021.jpg alt="MMLook7"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/dc/6f/aa/dc6faab09b486a584b6c854fd877c5eb.jpg alt="MMLook8"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/f4/f3/bc/f4f3bc4eaa8e8d0726624db534fbc931.jpg alt="MMLook9"> <img</div>
-      <div class="swiper-slide"><img src=https://i.pinimg.com/736x/95/17/d5/9517d5eb468a26ecf1fa41452e72b433.jpg alt="MMLook10"> <img</div>
-    </div>
-
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      function myPlugin({ swiper, extendParams, on }) {
-        extendParams({
-          debugger: false,
-        });
-  
-        on('init', () => {
-          if (!swiper.params.debugger) return;
-          console.log('init');
-        });
-        on('click', (swiper, e) => {
-          if (!swiper.params.debugger) return;
-          console.log('click');
-        });
-        on('tap', (swiper, e) => {
-          if (!swiper.params.debugger) return;
-          console.log('tap');
-        });
-        on('doubleTap', (swiper, e) => {
-          if (!swiper.params.debugger) return;
-          console.log('doubleTap');
-        });
-        on('sliderMove', (swiper, e) => {
-          if (!swiper.params.debugger) return;
-          console.log('sliderMove');
-        });
-        on('slideChange', () => {
-          if (!swiper.params.debugger) return;
-          console.log(
-            'slideChange',
-            swiper.previousIndex,
-            '->',
-            swiper.activeIndex
-          );
-        });
-        on('slideChangeTransitionStart', () => {
-          if (!swiper.params.debugger) return;
-          console.log('slideChangeTransitionStart');
-        });
-        on('slideChangeTransitionEnd', () => {
-          if (!swiper.params.debugger) return;
-          console.log('slideChangeTransitionEnd');
-        });
-        on('transitionStart', () => {
-          if (!swiper.params.debugger) return;
-          console.log('transitionStart');
-        });
-        on('transitionEnd', () => {
-          if (!swiper.params.debugger) return;
-          console.log('transitionEnd');
-        });
-        on('fromEdge', () => {
-          if (!swiper.params.debugger) return;
-          console.log('fromEdge');
-        });
-        on('reachBeginning', () => {
-          if (!swiper.params.debugger) return;
-          console.log('reachBeginning');
-        });
-        on('reachEnd', () => {
-          if (!swiper.params.debugger) return;
-          console.log('reachEnd');
-        });
-      }
-    </script>
-  
-    <script>
-      var swiper = new Swiper('.swiper', {
-        // Install Plugin To Swiper
-        modules: [myPlugin],
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        debugger: true,
-      });
-    </script>   
-<br> 
   
 <div class="bottom-band">
     <h2 id="CONTATTI"></h2>
