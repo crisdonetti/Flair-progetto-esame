@@ -57,7 +57,7 @@
   <div class="flair-section">
     <h2 id="Collezioni"></h2>
     <h1>VAMP / VAMP</h1>
-    <button onclick="toggleParagraph()">Relazione</button>
+    <button onclick="toggleParagraph('VAMPVAMPParagraph')">Relazione</button>
     <p id="VAMPVAMPParagraph" style="display: none;"> La collezione Vamp/Vamp vuole giocare sul doppio significato della
       parola "vamp", da un lato una persona dal fascino travolgente, dall'altro l'abbreviazione del termine inglese
       "vampire".<br /> L'obbiettivo è quello di creare un immaginario vampiresco non cupo e tetro (perlomeno in
@@ -91,8 +91,8 @@
     </p>
   </div>
   <script>
-    function toggleParagraph() {
-      var paragraph = document.getElementById("VAMPVAMPParagraph");
+    function toggleParagraph(paragraphId) {
+      var paragraph = document.getElementById(paragraphId);
       if (paragraph.style.display === "none") {
         paragraph.style.display = "block";
       } else {
@@ -132,8 +132,8 @@
   <br>
   </h2 id="MEMORIA FUTURI" </h2>
   <h1> MEMORIA FUTURI</h1>
-
-  <p>La collezione di moda “Memoria Futuri”, ispirata al movimento futurista, si basa sui principi fondamentali di
+  <button onclick="toggleParagraph('MemoriaFuturiParagraph')">Relazione</button>
+  <p id="MemoriaFuturiParagraph" style="display: none;"La collezione di moda “Memoria Futuri”, ispirata al movimento futurista, si basa sui principi fondamentali di
     questa avanguardia artistica, che vanno oltre la semplice estetica e si concentrano sulla dinamicità,
     sull'innovazione e sull'utilizzo di materiali moderni, seguendo la stessa ricerca verso il progresso e la tecnologia
     che caratterizzava gli appartenenti a questo movimento.Il nome è quindi un riferimento alla volontà della collezione
@@ -147,8 +147,9 @@
     collezione sono anche sostenibili, in linea con l'impegno del movimento futurista per la modernità e l'innovazione,
     non si può infatti immaginare un futuro senza prima concentrarsi sul presente.
   </p>
+  <br>
   </div>
-
+<br>
 
   <div class="bottom-band">
     <h2 id="CONTATTI"></h2>

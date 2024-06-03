@@ -52,7 +52,7 @@ a {
       color: grey;
      }
 #subscribeForm {
-    display: none; /* Nasconde il form inizialmente */
+    display: none;
     margin-top: 20px;
   }
 .click-iscriviti {
