@@ -75,3 +75,14 @@ a {
       font-family: 'Arial Narrow', sans-serif;
       font-size: 60px;
 }
+button {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      padding: 10px 20px;
+      font-size: 10px; 
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer; 
+      transition: background-color 0.3s, color 0.3s; 
+    }
