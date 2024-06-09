@@ -149,8 +149,8 @@ button:hover {
 .side-panel {
       position: fixed;
       top: 0;
-      right: -250px;
-      width: 250px;
+      right: -50%;
+      width: 50%;
       height: 100%;
       background-color: #a8a8a8;
       box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
