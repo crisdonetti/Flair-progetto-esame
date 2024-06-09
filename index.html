@@ -20,6 +20,16 @@
     <a href="#HERITAGE"> HERITAGE OF IDEAS</a> <br /><br />
     <a href="#CONTATTI">Contatti</a> <br /><br />
     <button class="click-iscriviti" onclick="toggleForm()">ISCRIVITI</button>
+    <div class="burger-menu" onclick="toggleSidePanel()">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+
+  </div>
+  <div class="side-panel" id="sidePanel">
+    <div class="panel-content">
+      <h2>CHI SIAMO</h2>
+      <p> napolo </p>
+    </div>
   </div>
 
   <div id="popupForm" class="popup">
@@ -40,8 +50,6 @@
 
     </div>
   </div>
-
-
 
 
   <div class="flair-section">
@@ -175,60 +183,60 @@
   </p>
   <br>
   <br>
-   <div class="slideshow-container" id="MemoriaSlider">
+   <div class=" slideshow-container" id="MemoriaSlider">
 
-    <div class="mySlides">
-      <img src="/img/M1.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M1.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M2.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M2.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M3.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M3.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M4.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M4.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M5.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M5.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M6.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M6.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M7.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M7.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M8.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M8.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M9.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M9.png">
+    <div class="text"></div>
+  </div>
 
-    <div class="mySlides">
-      <img src="/img/M10.png">
-      <div class="text"></div>
-    </div>
+  <div class="mySlides">
+    <img src="/img/M10.png">
+    <div class="text"></div>
+  </div>
 
-    <a class="prev" onclick="plusSlides(-1, 'MemoriaSlider')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 'MemoriaSlider')">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1, 'MemoriaSlider')">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 'MemoriaSlider')">&#10095;</a>
   </div>
 
   <br />
@@ -246,9 +254,9 @@
     <span class="dot" onclick="currentSlide(10, 'MemoriaSlider')"></span>
   </div>
 
- 
+
   <h2 id="HERITAGE">
-    </h2>
+  </h2>
   <h1> HERITAGE OF IDEAS</h1>
   <button onclick="toggleParagraph('IdeasParagraph')">RELAZIONE</button>
   <p id="IdeasParagraph" style="display: none;">La collezione di moda maschile Heritage of Ideas si ispira ai miti
@@ -375,17 +383,32 @@
   </div>
 
   <script>
+    function toggleSidePanel() {
+      var panel = document.getElementById('sidePanel');
+      panel.classList.toggle('active');
+      var burgerIcon = document.getElementById('burgerIcon');
+      if (panel.classList.contains('active')) {
+        burgerIcon.classList.remove('fa-arrow-right');
+        burgerIcon.classList.add('fa-arrow-left');
+      } else {
+        burgerIcon.classList.remove('fa-arrow-left');
+        burgerIcon.classList.add('fa-arrow-right');
+      }
+    }
+  </script>
+
+  <script>
     function toggleForm() {
       var popup = document.getElementById('popupForm');
       popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
     }
     function submitForm(event) {
-      event.preventDefault(); 
+      event.preventDefault();
       const firstName = document.getElementById('firstName').value;
       const lastName = document.getElementById('lastName').value;
       const email = document.getElementById('email').value;
       const birthdate = document.getElementById('birthdate').value;
-     
+
       console.log('Nome:', firstName);
       console.log('Cognome:', lastName);
       console.log('Email:', email);
@@ -397,7 +420,6 @@
 
     }
   </script>
-
 
   <script>
     function toggleParagraph(paragraphId) {

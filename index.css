@@ -133,3 +133,35 @@ button:hover {
       text-decoration: none;
       cursor: pointer;
 }
+
+.burger-menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 999;
+}
+
+.burger-menu i {
+      font-size: 24px;
+}
+
+.side-panel {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #a8a8a8;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 998;
+}
+
+.side-panel.active {
+      right: 0;
+}
+
+.panel-content {
+      padding: 20px;
+}
