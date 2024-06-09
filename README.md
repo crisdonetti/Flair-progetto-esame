@@ -31,6 +31,6 @@ FLAIR è un sito web di moda che presenta una collezione di capi ispirati a vari
 - **Immagini:** Le immagini delle collezioni sono fornite dai nostri designer e fotografi partner.
 
 ## Contatti
-Per domande, feedback o assistenza, contattaci tramite email all'indirizzo info@flair.com o visita la nostra pagina Contatti per ulteriori informazioni.
+Per domande, feedback o assistenza, contattaci tramite email agli indirizzi info@flair.com / cristiano.donetti.02@gmail.com o visita la nostra pagina Contatti per ulteriori informazioni.
 
 Grazie per aver visitato FLAIR!
