@@ -37,7 +37,7 @@
         <input type="date" id="dob" name="dob"><br><br>
         <input type="submit" value="Conferma" style="cursor: pointer;">
       </form>
-  
+
     </div>
   </div>
 
@@ -177,7 +177,7 @@
   <br> 
 
  
-  <h2 id=" HERITAGE">
+  <h2 id="HERITAGE">
     </h2>
   <h1> HERITAGE OF IDEAS</h1>
   <button onclick="toggleParagraph('IdeasParagraph')">RELAZIONE</button>
@@ -236,6 +236,23 @@
     function toggleForm() {
       var popup = document.getElementById('popupForm');
       popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+    }
+    function submitForm(event) {
+      event.preventDefault(); 
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const birthdate = document.getElementById('birthdate').value;
+     
+      console.log('Nome:', firstName);
+      console.log('Cognome:', lastName);
+      console.log('Email:', email);
+      console.log('Data di Nascita:', birthdate);
+
+      closePopup();
+
+      document.getElementById('subscribeForm').reset();
+
     }
   </script>
 
