@@ -17,44 +17,33 @@
     <h1 class="flair-title">FLAIR</h1>
     <a href="#Collezioni">VAMP/VAMP</a>
     <a href="#MEMORIAFUTURI">MEMORIA FUTURI</a>
-    <a href="#HERITAGE"> HERITAGE OF IDEAS</a> <br/ ><br/ >
-    <a href="#CONTATTI">Contatti</a> <br/ ><br/ >
+    <a href="#HERITAGE"> HERITAGE OF IDEAS</a> <br /><br />
+    <a href="#CONTATTI">Contatti</a> <br /><br />
     <button class="click-iscriviti" onclick="toggleForm()">ISCRIVITI</button>
-
-    <form id="subscribeForm" action="/action.php" target="_blank">
-      <label for="fname">Nome:</label><br>
-      <input type="text" id="fname" name="fname" value=""><br>
-      <label for="lname">Cognome:</label><br>
-      <input type="text" id="lname" name="lname" value=""><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" value=""><br>
-      <label for="dob">Data di nascita:</label><br>
-      <input type="date" id="dob" name="dob"><br><br>
-      <input type="submit" value="Conferma" style="cursor: pointer;">
-    </form>
   </div>
 
-  <script>
-    function toggleForm() {
-      var form = document.getElementById("subscribeForm");
-      if (form.style.display === "none" || form.style.display === "") {
-        form.style.display = "block";
-      } else {
-        form.style.display = "none";
-      }
-    }
-  </script>
+  <div id="popupForm" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="toggleForm()">&times;</span>
+      <h2>Benvenuto</h2>
+      <form>
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Cognome:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value=""><br>
+        <label for="dob">Data di nascita:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        <input type="submit" value="Conferma" style="cursor: pointer;">
+      </form>
+  
+    </div>
+  </div>
 
-  <script>
-    function toggleForm() {
-      var form = document.getElementById("subscribeForm");
-      if (form.style.display === "none" || form.style.display === "") {
-        form.style.display = "block";
-      } else {
-        form.style.display = "none";
-      }
-    }
-  </script>
+
+
+
   <div class="flair-section">
     <h2 id="Collezioni"></h2>
     <h1>VAMP / VAMP</h1>
@@ -91,18 +80,9 @@
       presenti gli occhiali da sole e le acconciature.
     </p>
   </div>
-  <script>
-    function toggleParagraph(paragraphId) {
-      var paragraph = document.getElementById(paragraphId);
-      if (paragraph.style.display === "none") {
-        paragraph.style.display = "block";
-      } else {
-        paragraph.style.display = "none";
-      }
-    }
-  </script>
+
   <br>
-  <div class="slideshow-container vamp-swiper">
+  <div class="slideshow-container" id="VampSlider">
 
     <div class="mySlides">
       <img src="/img/vamp1.png">
@@ -114,56 +94,66 @@
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp3.png">
       <div class="text"></div>
     </div>
-    
-    <div class="mySlides fade">
+
+    <div class="mySlides">
       <img src="/img/vamp4.png">
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp5.png">
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp6.png">
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp7.png">
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp8.png">
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp9.png">
       <div class="text"></div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
       <img src="/img/vamp10.png">
       <div class="text"></div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1, 'VampSlider')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'VampSlider')">&#10095;</a>
   </div>
+
   <br />
 
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(1, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(2, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(3, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(4, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(5, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(6, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(7, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(8, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(9, 'VampSlider')"></span>
+    <span class="dot" onclick="currentSlide(10, 'VampSlider')"></span>
   </div>
+
+
 
   <br />
   <h2 id="MEMORIAFUTURI"></h2>
@@ -184,10 +174,10 @@
     non si può infatti immaginare un futuro senza prima concentrarsi sul presente.
   </p>
   <br>
-  
-  </div>
-<br />
-<h2 id="HERITAGE">
+  <br> 
+
+ 
+  <h2 id=" HERITAGE">
     </h2>
   <h1> HERITAGE OF IDEAS</h1>
   <button onclick="toggleParagraph('IdeasParagraph')">RELAZIONE</button>
@@ -232,6 +222,7 @@
     in plissé che ricordano piume.
   </p>
   <br />
+
   <br />
   <div class="bottom-band">
     <h2 id="CONTATTI"></h2>
@@ -240,7 +231,28 @@
     <p class="small-text"><i class="fas fa-phone phone-icon"></i> : 01633452789 / 3380911209</p>
     <p class="small-text"><i class="fab fa-instagram"> </i> : flair</p>
   </div>
+
+  <script>
+    function toggleForm() {
+      var popup = document.getElementById('popupForm');
+      popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+
+  <script>
+    function toggleParagraph(paragraphId) {
+      var paragraph = document.getElementById(paragraphId);
+      if (paragraph.style.display === "none") {
+        paragraph.style.display = "block";
+      } else {
+        paragraph.style.display = "none";
+      }
+    }
+  </script>
+
   <script src="script.js"></script>
+
 </body>
 
 </html>
