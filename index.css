@@ -58,6 +58,7 @@ img {
 
 a {
       color: grey;
+      cursor: pointer;
 }
 
 #subscribeForm {
@@ -78,9 +79,9 @@ a {
 .flair-title {
       font-family: 'Cormorant Unicase', fantasy;
       font-size: 60px;
-  }
+}
 
-  button {
+button {
       background-color: white;
       color: black;
       border: 2px solid black;
@@ -175,4 +176,14 @@ button:hover {
       font-size: 10px;
       color: grey;
       text-align: center;
+}
+
+.prev {
+      color: black;
+      cursor: pointer;
+}
+
+.next {
+      color: black;
+      cursor: pointer;
 }
