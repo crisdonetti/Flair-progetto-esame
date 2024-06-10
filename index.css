@@ -143,14 +143,14 @@ button:hover {
 }
 
 .burger-menu i {
-      font-size: 24px;
+      font-size: 25px;
 }
 
 .side-panel {
       position: fixed;
       top: 0;
-      right: -250px;
-      width: 250px;
+      right: -100%;
+      width: 100%;
       height: 100%;
       background-color: #a8a8a8;
       box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
@@ -164,4 +164,8 @@ button:hover {
 
 .panel-content {
       padding: 20px;
+}
+
+.burger-content {
+      font-size: 12px;
 }
