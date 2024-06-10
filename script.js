@@ -33,5 +33,4 @@ function showSlides(sliderId, n) {
   }
   
   slides[slideIndex[sliderId]-1].style.display = "block";
-  dots[slideIndex[sliderId]-1].className += " active";
 }
