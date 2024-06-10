@@ -76,10 +76,9 @@ a {
 }
 
 .flair-title {
-      font-family: Papyrus, fantasy;
+      font-family: 'Cormorant Unicase', fantasy;
       font-size: 60px;
-}
-
+  }
 button {
       background-color: white;
       color: black;
