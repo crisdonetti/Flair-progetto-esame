@@ -276,7 +276,7 @@ button:hover {
 @media (max-width: 600px) {
       .top-band a {
           margin: 0 5px; 
-          font-size: 14px; 
+          font-size: 12px; 
       }
   
       img {
