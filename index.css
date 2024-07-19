@@ -292,4 +292,9 @@ button:hover {
             height: auto;
             justify-content: center;
       }
+
+      h1 {
+            font-size: 30px;
+            margin: 20px;
+      }
   }
