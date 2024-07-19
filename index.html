@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
-ciao
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,10 @@ ciao
 </head>
 
 <body>
-
+  <div id="cookiePopup">
+    Questo sito utilizza i cookie per migliorare la tua esperienza. 
+    <button onclick="acceptCookies()">Accetta</button>
+</div>
 
   <div class="top-band">
     <h1 class="flair-title">FLAIR</h1>
@@ -356,7 +359,13 @@ ciao
     <a class="next" onclick="plusSlides(1, 'HeritageSlider')">&#10095;</a>
 
   </div>
-
+  <a href="https://www.vogue.it/moda/article/materiali-sostenibili-moda-futuro-alternative" class="article-preview" target="_blank">
+    <img src="https://www.vogue.it/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50VGltZSI6MTY4OTMyNzM3MDI5NywianRpIjoiZDAxYzg2MGMtZDMyOS00NzcyLTk4YjUtNGFiZWI1MDg0NjE2Iiwicm9vdCI6Imh0dHBzOlwvXC93d3cudm9ndWUuaXRcLyIsInNpdGVJZCI6IjIwNTBhZjBlLTQ0MDItNDc2Mi1iNGNjLTA5MWZlYmExOWFkYyIsInVybCI6Imh0dHBzOlwvXC93d3cudm9ndWUuaXRcL21vZGFcL2FydGljbGVcL21hdGVyaWFsaS1zb3N0ZW5pYmlsaS1tb2RhLWZ1dHVyby1hbHRlcm5hdGl2ZVwvY2Q5NzI5ODgtODRlOC00NTc0LTliOWYtYWEyN2E3NTBhOWZmXC9pbWFnZXNcL2ltYWdlXzE2ODkzMjczMDE2MjYuanBnIn0.0iFGBDA6FZh1GAi50Nbi1xXQTPeU5T7kOlU_M_eh94I/image.jpg" alt="Materiali Sostenibili - Moda Futuro">
+    <div>
+        <h3>Materiali Sostenibili - Il Futuro della Moda</h3>
+        <p>Scopri come i materiali sostenibili stanno rivoluzionando il futuro della moda con nuove alternative eco-friendly.</p>
+    </div>
+</a>
 
   <br />
   <div class="bottom-band">
@@ -368,6 +377,19 @@ ciao
     <p class="registrato"> &copy; 2024. Cristiano Donetti</p>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('cookiesAccepted')) {
+            document.getElementById('cookiePopup').style.display = 'block';
+        }
+    });
+
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookiePopup').style.display = 'none';
+    }
+</script>
+  
   <script>
     function toggleSidePanel() {
       var panel = document.getElementById('sidePanel');

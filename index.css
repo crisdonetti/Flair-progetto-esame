@@ -187,3 +187,67 @@ button:hover {
       color: black;
       cursor: pointer;
 }
+
+#cookiePopup {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+}
+
+#cookiePopup button {
+      background-color: #555;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+#cookiePopup button:hover {
+      background-color: #777;
+}
+
+.article-preview {
+      display: flex;
+      align-items: center;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px;
+      text-decoration: none;
+      color: black;
+      
+}
+
+.article-preview img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+}
+
+.article-preview div {
+      flex-grow: 1;
+}
+
+.article-preview h3 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+}
+
+.article-preview p {
+      margin: 0;
+      font-size: 14px;
+}
