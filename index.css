@@ -270,8 +270,16 @@ button:hover {
 
 .subtitle {
       font-size: 25px;
-      margin-top: 100px;
+      margin-top: 30px;
 }
+
+.full-width-hr {
+      border: none; 
+      height: 2px; 
+      background-color: black; 
+      margin-top: 70px;
+      width: 100%; 
+  }
 
 @media (max-width: 600px) {
       .top-band a {
