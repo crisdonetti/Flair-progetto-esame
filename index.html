@@ -13,9 +13,9 @@
 
 <body>
   <div id="cookiePopup">
-    Questo sito utilizza i cookie per migliorare la tua esperienza. 
+    Questo sito utilizza i cookie per migliorare la tua esperienza.
     <button onclick="acceptCookies()">Accetta</button>
-</div>
+  </div>
 
   <div class="top-band">
     <h1 class="flair-title">FLAIR</h1>
@@ -254,7 +254,7 @@
   <a class="prev" onclick="plusSlides(-1, 'MemoriaSlider')">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 'MemoriaSlider')">&#10095;</a>
 
- </div>
+  </div>
 
 
   <h2 id="HERITAGE">
@@ -359,29 +359,33 @@
     <a class="next" onclick="plusSlides(1, 'HeritageSlider')">&#10095;</a>
 
   </div>
-  <a href="https://www.vogue.it/moda/article/materiali-sostenibili-moda-futuro-alternative" class="article-preview" target="_blank">
+  <a href="https://www.vogue.it/moda/article/materiali-sostenibili-moda-futuro-alternative" class="article-preview"
+    target="_blank">
     <img src="img/sostenibile.jpg" alt="Materiali Sostenibili - Moda Futuro">
-      <div>
-        <h3>Materiali Sostenibili - Il Futuro della Moda</h3>
-        <p>Scopri come i materiali sostenibili stanno rivoluzionando il futuro della moda con nuove alternative eco-friendly.</p>
-    </div>
-</a>
-
-<a href="https://www.elle.com/it/moda/ultime-notizie/g46239845/10-nuovi-marchi-moda-2024/" class="article-preview" target="_blank">
-  <img src="img/brandemergenti.jpeg.jpg" alt="Brand emergenti">
     <div>
-      <h3>10 nuovi marchi di moda da tenere d’occhio nel 2024</h3>
-      <p>Giovani o giovanissimi e dallo stile eclettico, spesso sostenibili e altrettanto spesso guidati da donne. Guida ai brand emergenti da seguire quest'anno.</p>
-  </div>
-</a>
+      <h3>Materiali Sostenibili - Il Futuro della Moda</h3>
+      <p>Scopri come i materiali sostenibili stanno rivoluzionando il futuro della moda con nuove alternative
+        eco-friendly.</p>
+    </div>
+  </a>
 
-<a href="https://milanofashionweek.cameramoda.it/it" class="article-preview" target="_blank">
-  <img src="img/MilanFashionWeek.jpg" alt="Milan Fashion Week">
+  <a href="https://www.elle.com/it/moda/ultime-notizie/g46239845/10-nuovi-marchi-moda-2024/" class="article-preview"
+    target="_blank">
+    <img src="img/brandemergenti.jpeg.jpg" alt="Brand emergenti">
+    <div>
+      <h3>10 nuovi brand da tenere d’occhio nel 2024</h3>
+      <p>Giovani o giovanissimi e dallo stile eclettico, spesso sostenibili e altrettanto spesso guidati da donne. Guida
+        ai brand emergenti da seguire quest'anno.</p>
+    </div>
+  </a>
+
+  <a href="https://milanofashionweek.cameramoda.it/it" class="article-preview" target="_blank">
+    <img src="img/MilanFashionWeek.jpg" alt="Milan Fashion Week">
     <div>
       <h3>Milan Fashion Week</h3>
       <p>Scopri tutti gli appuntamenti imperdibili della Settimana della Moda di Milano e le sfilate d'archivio.</p>
-  </div>
-</a>
+    </div>
+  </a>
 
   <br />
   <div class="bottom-band">
@@ -394,18 +398,18 @@
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        if (!localStorage.getItem('cookiesAccepted')) {
-            document.getElementById('cookiePopup').style.display = 'block';
-        }
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookiePopup').style.display = 'block';
+      }
     });
 
     function acceptCookies() {
-        localStorage.setItem('cookiesAccepted', 'true');
-        document.getElementById('cookiePopup').style.display = 'none';
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookiePopup').style.display = 'none';
     }
-</script>
-  
+  </script>
+
   <script>
     function toggleSidePanel() {
       var panel = document.getElementById('sidePanel');
